@@ -4070,8 +4070,8 @@ impl Type {
                 | TyKind::Function(_)
                 | TyKind::Alias(_)
                 | TyKind::Foreign(_)
-                | TyKind::Generator(..)
-                | TyKind::GeneratorWitness(..) => false,
+                | TyKind::Coroutine(..)
+                | TyKind::CoroutineWitness(..) => false,
             }
         }
     }
