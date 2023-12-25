@@ -299,7 +299,7 @@ pub struct InlineAsm {
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum ClosureKind {
     Closure,
-    Generator(Movability),
+    Coroutine(Movability),
     Async,
 }
 
